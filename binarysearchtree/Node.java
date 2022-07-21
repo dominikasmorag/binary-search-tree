@@ -36,6 +36,7 @@ class Node <T extends Comparable> implements Comparable<Node> {
 
     @Override
     public int compareTo(Node node) {
-        return getObj().compareTo(node);
+        int compareResult = getObj().compareTo(node.obj);
+        return compareResult;
     }
 }
